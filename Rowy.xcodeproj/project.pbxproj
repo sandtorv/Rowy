@@ -15,6 +15,7 @@
 		52AAF5541B6FE4E500CA3D67 /* TrainerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AAF5531B6FE4E500CA3D67 /* TrainerTableView.swift */; };
 		52AAF5561B6FE4EF00CA3D67 /* TrainerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AAF5551B6FE4EF00CA3D67 /* TrainerTableCell.swift */; };
 		52AAF5581B6FF01C00CA3D67 /* RowerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AAF5571B6FF01C00CA3D67 /* RowerClass.swift */; };
+		52B2A0E81B8A3C4E007C10F6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 52B2A0E71B8A3C4E007C10F6 /* README.md */; };
 		52BE2F7D1B44026F005300FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE2F7C1B44026F005300FA /* AppDelegate.swift */; };
 		52BE2F821B44026F005300FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BE2F801B44026F005300FA /* Main.storyboard */; };
 		52BE2F841B44026F005300FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BE2F831B44026F005300FA /* Images.xcassets */; };
@@ -41,6 +42,7 @@
 		52AAF5531B6FE4E500CA3D67 /* TrainerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerTableView.swift; sourceTree = "<group>"; };
 		52AAF5551B6FE4EF00CA3D67 /* TrainerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerTableCell.swift; sourceTree = "<group>"; };
 		52AAF5571B6FF01C00CA3D67 /* RowerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowerClass.swift; sourceTree = "<group>"; };
+		52B2A0E71B8A3C4E007C10F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		52BE2F771B44026F005300FA /* Rowy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rowy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BE2F7B1B44026F005300FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52BE2F7C1B44026F005300FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		52BE2F6E1B44026F005300FA = {
 			isa = PBXGroup;
 			children = (
+				52B2A0E71B8A3C4E007C10F6 /* README.md */,
 				52BE2F791B44026F005300FA /* Rowy */,
 				52BE2F8F1B44026F005300FA /* RowyTests */,
 				52BE2F781B44026F005300FA /* Products */,
@@ -235,6 +238,7 @@
 			files = (
 				52AAF5581B6FF01C00CA3D67 /* RowerClass.swift in Sources */,
 				523F025A1B6A33D6008C6ACA /* ViewController.swift in Sources */,
+				52B2A0E81B8A3C4E007C10F6 /* README.md in Sources */,
 				52AAF5541B6FE4E500CA3D67 /* TrainerTableView.swift in Sources */,
 				52AAF5561B6FE4EF00CA3D67 /* TrainerTableCell.swift in Sources */,
 				526752261B45B9870077C17A /* Arrays.swift in Sources */,
