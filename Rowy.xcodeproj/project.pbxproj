@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		523F02581B6A3394008C6ACA /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F02571B6A3394008C6ACA /* MPCHandler.swift */; };
+		523F025A1B6A33D6008C6ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F02591B6A33D6008C6ACA /* ViewController.swift */; };
+		523F025E1B6A3BCF008C6ACA /* RowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F025D1B6A3BCF008C6ACA /* RowerViewController.swift */; };
+		526752261B45B9870077C17A /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526752251B45B9870077C17A /* Arrays.swift */; };
+		526752281B45BA820077C17A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526752271B45BA820077C17A /* Helper.swift */; };
+		52AAF5541B6FE4E500CA3D67 /* TrainerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AAF5531B6FE4E500CA3D67 /* TrainerTableView.swift */; };
+		52AAF5561B6FE4EF00CA3D67 /* TrainerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AAF5551B6FE4EF00CA3D67 /* TrainerTableCell.swift */; };
+		52AAF5581B6FF01C00CA3D67 /* RowerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AAF5571B6FF01C00CA3D67 /* RowerClass.swift */; };
+		52BE2F7D1B44026F005300FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE2F7C1B44026F005300FA /* AppDelegate.swift */; };
+		52BE2F821B44026F005300FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BE2F801B44026F005300FA /* Main.storyboard */; };
+		52BE2F841B44026F005300FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BE2F831B44026F005300FA /* Images.xcassets */; };
+		52BE2F871B44026F005300FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BE2F851B44026F005300FA /* LaunchScreen.xib */; };
+		52BE2F931B44026F005300FA /* RowyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE2F921B44026F005300FA /* RowyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52BE2F8D1B44026F005300FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BE2F6F1B44026F005300FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52BE2F761B44026F005300FA;
+			remoteInfo = Rowy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		523F02571B6A3394008C6ACA /* MPCHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
+		523F02591B6A33D6008C6ACA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		523F025D1B6A3BCF008C6ACA /* RowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowerViewController.swift; sourceTree = "<group>"; };
+		526752251B45B9870077C17A /* Arrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		526752271B45BA820077C17A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		52AAF5531B6FE4E500CA3D67 /* TrainerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerTableView.swift; sourceTree = "<group>"; };
+		52AAF5551B6FE4EF00CA3D67 /* TrainerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerTableCell.swift; sourceTree = "<group>"; };
+		52AAF5571B6FF01C00CA3D67 /* RowerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowerClass.swift; sourceTree = "<group>"; };
+		52BE2F771B44026F005300FA /* Rowy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rowy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BE2F7B1B44026F005300FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BE2F7C1B44026F005300FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52BE2F811B44026F005300FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52BE2F831B44026F005300FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52BE2F861B44026F005300FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		52BE2F8C1B44026F005300FA /* RowyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RowyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BE2F911B44026F005300FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BE2F921B44026F005300FA /* RowyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52BE2F741B44026F005300FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BE2F891B44026F005300FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52BE2F6E1B44026F005300FA = {
+			isa = PBXGroup;
+			children = (
+				52BE2F791B44026F005300FA /* Rowy */,
+				52BE2F8F1B44026F005300FA /* RowyTests */,
+				52BE2F781B44026F005300FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52BE2F781B44026F005300FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BE2F771B44026F005300FA /* Rowy.app */,
+				52BE2F8C1B44026F005300FA /* RowyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52BE2F791B44026F005300FA /* Rowy */ = {
+			isa = PBXGroup;
+			children = (
+				52BE2F7C1B44026F005300FA /* AppDelegate.swift */,
+				526752251B45B9870077C17A /* Arrays.swift */,
+				526752271B45BA820077C17A /* Helper.swift */,
+				523F02591B6A33D6008C6ACA /* ViewController.swift */,
+				523F025D1B6A3BCF008C6ACA /* RowerViewController.swift */,
+				52AAF5571B6FF01C00CA3D67 /* RowerClass.swift */,
+				52AAF5531B6FE4E500CA3D67 /* TrainerTableView.swift */,
+				52AAF5551B6FE4EF00CA3D67 /* TrainerTableCell.swift */,
+				523F02571B6A3394008C6ACA /* MPCHandler.swift */,
+				52BE2F801B44026F005300FA /* Main.storyboard */,
+				52BE2F831B44026F005300FA /* Images.xcassets */,
+				52BE2F851B44026F005300FA /* LaunchScreen.xib */,
+				52BE2F7A1B44026F005300FA /* Supporting Files */,
+			);
+			path = Rowy;
+			sourceTree = "<group>";
+		};
+		52BE2F7A1B44026F005300FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52BE2F7B1B44026F005300FA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52BE2F8F1B44026F005300FA /* RowyTests */ = {
+			isa = PBXGroup;
+			children = (
+				52BE2F921B44026F005300FA /* RowyTests.swift */,
+				52BE2F901B44026F005300FA /* Supporting Files */,
+			);
+			path = RowyTests;
+			sourceTree = "<group>";
+		};
+		52BE2F901B44026F005300FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52BE2F911B44026F005300FA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52BE2F761B44026F005300FA /* Rowy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BE2F961B44026F005300FA /* Build configuration list for PBXNativeTarget "Rowy" */;
+			buildPhases = (
+				52BE2F731B44026F005300FA /* Sources */,
+				52BE2F741B44026F005300FA /* Frameworks */,
+				52BE2F751B44026F005300FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rowy;
+			productName = Rowy;
+			productReference = 52BE2F771B44026F005300FA /* Rowy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52BE2F8B1B44026F005300FA /* RowyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BE2F991B44026F005300FA /* Build configuration list for PBXNativeTarget "RowyTests" */;
+			buildPhases = (
+				52BE2F881B44026F005300FA /* Sources */,
+				52BE2F891B44026F005300FA /* Frameworks */,
+				52BE2F8A1B44026F005300FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52BE2F8E1B44026F005300FA /* PBXTargetDependency */,
+			);
+			name = RowyTests;
+			productName = RowyTests;
+			productReference = 52BE2F8C1B44026F005300FA /* RowyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52BE2F6F1B44026F005300FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Sebastian Sandtorv ";
+				TargetAttributes = {
+					52BE2F761B44026F005300FA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					52BE2F8B1B44026F005300FA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 52BE2F761B44026F005300FA;
+					};
+				};
+			};
+			buildConfigurationList = 52BE2F721B44026F005300FA /* Build configuration list for PBXProject "Rowy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52BE2F6E1B44026F005300FA;
+			productRefGroup = 52BE2F781B44026F005300FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52BE2F761B44026F005300FA /* Rowy */,
+				52BE2F8B1B44026F005300FA /* RowyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52BE2F751B44026F005300FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BE2F821B44026F005300FA /* Main.storyboard in Resources */,
+				52BE2F871B44026F005300FA /* LaunchScreen.xib in Resources */,
+				52BE2F841B44026F005300FA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BE2F8A1B44026F005300FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52BE2F731B44026F005300FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52AAF5581B6FF01C00CA3D67 /* RowerClass.swift in Sources */,
+				523F025A1B6A33D6008C6ACA /* ViewController.swift in Sources */,
+				52AAF5541B6FE4E500CA3D67 /* TrainerTableView.swift in Sources */,
+				52AAF5561B6FE4EF00CA3D67 /* TrainerTableCell.swift in Sources */,
+				526752261B45B9870077C17A /* Arrays.swift in Sources */,
+				523F02581B6A3394008C6ACA /* MPCHandler.swift in Sources */,
+				52BE2F7D1B44026F005300FA /* AppDelegate.swift in Sources */,
+				526752281B45BA820077C17A /* Helper.swift in Sources */,
+				523F025E1B6A3BCF008C6ACA /* RowerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BE2F881B44026F005300FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BE2F931B44026F005300FA /* RowyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52BE2F8E1B44026F005300FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52BE2F761B44026F005300FA /* Rowy */;
+			targetProxy = 52BE2F8D1B44026F005300FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52BE2F801B44026F005300FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52BE2F811B44026F005300FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52BE2F851B44026F005300FA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52BE2F861B44026F005300FA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52BE2F941B44026F005300FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52BE2F951B44026F005300FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52BE2F971B44026F005300FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rowy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52BE2F981B44026F005300FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rowy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52BE2F9A1B44026F005300FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RowyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rowy.app/Rowy";
+			};
+			name = Debug;
+		};
+		52BE2F9B1B44026F005300FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RowyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rowy.app/Rowy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52BE2F721B44026F005300FA /* Build configuration list for PBXProject "Rowy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BE2F941B44026F005300FA /* Debug */,
+				52BE2F951B44026F005300FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BE2F961B44026F005300FA /* Build configuration list for PBXNativeTarget "Rowy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BE2F971B44026F005300FA /* Debug */,
+				52BE2F981B44026F005300FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BE2F991B44026F005300FA /* Build configuration list for PBXNativeTarget "RowyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BE2F9A1B44026F005300FA /* Debug */,
+				52BE2F9B1B44026F005300FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52BE2F6F1B44026F005300FA /* Project object */;
+}
