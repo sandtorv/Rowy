@@ -154,7 +154,7 @@ class TrainerTableViewController: UIViewController, UITableViewDelegate, MCBrows
         rowDistanceBool = true
         rowDistanceLength = distanceToRow
         resetData = true
-        startRowing = false
+        startRowing(self)
     }
     
     @IBAction func resetData(sender: AnyObject) {

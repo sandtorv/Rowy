@@ -148,6 +148,8 @@ class TrainerViewController: UIViewController, MCBrowserViewControllerDelegate {
         rowDistanceBool = true
         rowDistanceLength = distanceToRow
         resetData = true
+        startRowing = true
+        sendData()
         startRowing = false
     }
     
