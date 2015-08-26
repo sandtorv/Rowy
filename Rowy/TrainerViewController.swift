@@ -150,7 +150,7 @@ class TrainerViewController: UIViewController, MCBrowserViewControllerDelegate {
         resetData = true
         startRowing = true
         sendData()
-        startRowing = false
+        startRowing = false'
     }
     
     @IBAction func resetData(sender: AnyObject) {

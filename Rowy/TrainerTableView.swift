@@ -67,7 +67,7 @@ class TrainerTableViewController: UIViewController, UITableViewDelegate, MCBrows
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! trainerTableCell
         if(indexPath.row % 2 == 0){
-            cell.backgroundColor = .lightGrayColor()
+            cell.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1)
         } else{
             cell.backgroundColor = .whiteColor()
         }
@@ -151,10 +151,12 @@ class TrainerTableViewController: UIViewController, UITableViewDelegate, MCBrows
     }
     
     func rowGivenDistance(distanceToRow: Int){
-        rowDistanceBool = true
-        rowDistanceLength = distanceToRow
-        resetData = true
-        startRowing(self)
+        if(peers.count > 0){
+            rowDistanceBool = true
+            rowDistanceLength = distanceToRow
+            resetData = true
+            startRowing(self)
+        }
     }
     
     @IBAction func resetData(sender: AnyObject) {
@@ -169,6 +171,15 @@ class TrainerTableViewController: UIViewController, UITableViewDelegate, MCBrows
         let messageData = NSJSONSerialization.dataWithJSONObject(messageDict, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
         var error:NSError?
         appDelegate.mpcHandler.session.sendData(messageData, toPeers: appDelegate.mpcHandler.session.connectedPeers, withMode: MCSessionSendDataMode.Reliable, error: &error)
+    }
+    @IBAction func showHelp(sender: AnyObject) {
+        let alert = UIAlertController(title: "How to use",
+            message:"Start by clicking the Connect Rowers button to connect all rowers (max. 7). When this is done you will see live performance data from all rowers. \n \n To start rowing a given distance for all boats, select the distance to row in the bottom right corner. The clock will start counting when the rower start to row. \n \n Remeber to turn on Bluetooth and WiFi to communicate with the boats!",
+            preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.Default, handler: nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func browserViewControllerDidFinish(browserViewController: MCBrowserViewController!) {

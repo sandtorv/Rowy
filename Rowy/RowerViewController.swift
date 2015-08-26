@@ -21,7 +21,6 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
     
     let location = CLLocationManager()
     var distanceCount:Double = 0
-    var timeRowed:Double = 0
     var started: Bool = false
     
     var split:Int = 0
@@ -37,16 +36,16 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
     var distanceTime: Double = 0
     var distanceTimeInt: Int = 0
     
-    @IBOutlet weak var startStopButton: UIBarButtonItem!
-    
     // Labels outlet
     @IBOutlet weak var splitLive: UILabel!
     @IBOutlet weak var splitAVG: UILabel!
     @IBOutlet weak var tripDistance: UILabel!
+    @IBOutlet weak var timeElapsed: UILabel!
     
     @IBOutlet weak var splitLiveTitle: UILabel!
     @IBOutlet weak var splitAVGTitle: UILabel!
     @IBOutlet weak var tripDistanceTitle: UILabel!
+    @IBOutlet weak var timeRowedTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,7 +98,7 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
     
     func startRowingDistance(distance: Int){
         distanceToRow = distance
-        timeRowed = 0
+        distanceCountdown = true
         startRowing()
         println("Should row distance \(distance)")
     }
@@ -108,17 +107,26 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
         started = false
         resetData()
     }
+    @IBAction func row500m(sender: AnyObject) {
+        startRowingDistance(500)
+    }
     
+    @IBAction func row1000m(sender: AnyObject) {
+        startRowingDistance(1000)
+    }
+    @IBAction func row2000m(sender: AnyObject) {
+        startRowingDistance(2000)
+    }
     @IBAction func resetDataBtn(sender: AnyObject) {
         resetData()
     }
     func resetData() {
         locationsArray.removeAll()
         distanceCount = 0
-        timeRowed = 0
         AVGsplit = 0
         split = 0
         distance = 0
+        startTime = NSDate()
         if(timer != nil){
             timer.invalidate()
         }
@@ -144,15 +152,16 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
                 liveSplitString = "00:00"
                 split = 0
             }
-            if(distanceCount > 0 && timeRowed > 0){
-                AVGsplit = (Int(500/((distanceCount/timeRowed)*2)))
+            let timeElapsed = NSDate().timeIntervalSinceDate(startTime)
+            if(distanceCount > 0 && timeElapsed > 0){
+                AVGsplit = (Int(500/(distanceCount/timeElapsed)))
                 if (AVGsplit > 3599){
                     AVGsplit = 3599
                 }
                 avgSplitString = secToMin(AVGsplit)
             } else {
                 AVGsplit = 0
-                timeRowed = 0
+                startTime = NSDate()
                 avgSplitString = "00:00"
             }
             
@@ -205,6 +214,7 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
         // Update Labels
         splitLive.text = liveSplitString
         splitAVG.text = avgSplitString
+        timeElapsed.text = secToMin(Int(NSDate().timeIntervalSinceDate(startTime)))
         
         if (distanceCountdown){
             tripDistanceTitle.text = "Distance left"
@@ -212,9 +222,7 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
             tripDistance.text = "\(distanceLeft)m"
             if(distanceLeft < 1){
                 distanceCountdown = false
-                distanceTime = timeRowed
-                var timeNow = NSDate()
-                let timeElapsed = timeNow.timeIntervalSinceDate(startTime)
+                let timeElapsed = NSDate().timeIntervalSinceDate(startTime)
                 let alert = UIAlertController(title: "You finished \(distanceToRow)m", message: "You rowed \(distanceToRow)m in \(secToMin(Int(timeElapsed)))!", preferredStyle: UIAlertControllerStyle.Alert)
                 
                 alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.Default, handler: nil))
@@ -226,9 +234,6 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
             tripDistanceTitle.text = "Distance"
             tripDistance.text = "\(Int(distanceCount))m"
         }
-        
-        // Append time to rowed
-        timeRowed += 0.5
     
         let messageDict = ["Player":currentPlayer, "Distance":Int(distanceCount), "Split":split, "AVGSplit":AVGsplit]
         let messageData = NSJSONSerialization.dataWithJSONObject(messageDict, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
@@ -244,4 +249,13 @@ class RowerViewController: UIViewController, CLLocationManagerDelegate, MCBrowse
         appDelegate.mpcHandler.browser.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func showHelp(sender: AnyObject) {
+        let alert = UIAlertController(title: "How to use", message:
+            "To start, simply start rowing. The app calculates speed and distance while rowing. \n \n  Reset the datas by pressing the reset data button, or start rowing a distance by clicking the distance at the bottom. \n \n To use with a trainer and other boats, a trainer must invite all rowers and the rowers must accept the popup on screen. \n \n Remeber to turn on Bluetooth and WiFi to communicate with the other boats and trainer!",
+            preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.Default, handler: nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
 }
